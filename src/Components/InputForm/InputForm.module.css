@@ -48,4 +48,8 @@
         margin: 0 100px;
         
     }
+    .InputForm .Submit{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
