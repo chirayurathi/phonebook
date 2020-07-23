@@ -7,7 +7,7 @@ class Records extends Component{
         return(
             <div className={Style.Records}>
                 {this.props.loading?null:this.props.records.map(record=>{
-                    if(record.name.includes(this.props.find) || record.number.includes(this.props.find) || record.altnumber.includes(this.props.find) || record.email.includes(this.props.find))
+                    if(record.name.toLowerCase().includes(this.props.find.toLowerCase()) || record.number.includes(this.props.find) || record.altnumber.includes(this.props.find) || record.email.includes(this.props.find))
                     {
                         return(
                             <Record {...record} 

@@ -72,4 +72,8 @@
     .DropDown button{
         padding:2px;
     }
+    .DropDown ul{
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
 }
