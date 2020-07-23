@@ -1,0 +1,75 @@
+.DropDown{
+    display: inline-block;
+    position: relative;
+}
+.DropDown button{
+    padding:0 7px;
+    height: 5vh;
+    border-radius: 7px;
+    text-align: center;
+    /* border:1px solid black; */
+    margin:0vh 15px;
+    font-size: 17px;
+    color: white;
+    background-color: #781ed8;
+    border:1px solid #781ed8;
+    width: 120px;
+}
+.DropDown button:focus{
+    outline: none;
+}
+.DropDown i{
+    color: white;
+    font-size: 23px;
+}
+
+.DropDown ul{
+    position: absolute;
+    top:1.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    color: rgb(206, 206, 206);
+    font-size: 19px;
+    height: 150px;
+    width: 80px;
+    left:15px;
+    align-items: left;
+    background-color: #8a28f3 ;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.DropDown ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.DropDown button:hover + ul,.DropDown button:active + ul, .DropDown ul:hover{
+    top:2.5vh;
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media screen and (max-width:800px){
+    .DropDown button{
+        width: auto;
+    }
+}
+@media screen and (max-width:500px){
+    .DropDown button{
+        margin: 1px;
+    }
+    .DropDown ul{
+        left:-25px;
+    }
+}
+@media screen and (max-width:400px){
+    .DropDown button{
+        padding:2px;
+    }
+}

@@ -1,0 +1,79 @@
+.Record{
+    width:40%;
+    display: inline-block;
+    margin: 5%;
+    margin-bottom: 0;
+    border-radius: 7px;
+    background-color: white;
+    height: 200px;
+    position: relative;
+}
+.Record img, .Record div{
+    height: 90%;
+    margin: 2.5%;
+    border-radius: 7px;
+    display: inline-block;
+
+}
+.Record div{
+    position: absolute;
+    text-align: start;
+    top:25px;
+}
+.Record img{
+    max-width: 25%;
+}
+.Record span{
+    display: block;
+    margin: 10px 0;
+}
+.Record span i{
+    color: #190033;
+    margin-right: 20px;
+}
+.Name{
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+.Record .Functions{
+    top:-10px;
+    right:10px;
+}
+.Record .Functions i{
+    padding: 9px;
+    margin: 7px;
+    border-radius: 50%;
+    color:white;
+}
+.mod{
+    background-color: rgb(233, 233, 106);
+}
+.del{
+    background-color: rgb(230, 52, 52);
+}
+.Record .Functions i:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:1100px){
+    .Record{
+        width: 90%;
+        height: 175px;
+    }
+}
+@media screen and (max-width:600px){
+    .Record img{
+        height: 70%;
+        margin: 5px;
+        margin-top: 12.5%;
+    }
+}
+@media screen and (max-width:450px){
+    .Record{
+        font-size:0.8em ;
+    }
+    .Name{
+        font-size: 1em;
+    }
+
+}

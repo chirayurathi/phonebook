@@ -1,0 +1,119 @@
+.Navbar{
+    margin:20px 10%;
+    width: 80%;
+    height: 7vh;
+    background-color: rgba(255, 255, 255, 0.925);
+    position: fixed;
+    top:0;
+    z-index: 100;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+.Navbar.NavScr{
+        margin:0 0;
+        width: 100%;
+        height: 7vh;
+        background-color: rgba(255, 255, 255, 1);
+        position: fixed;
+        top:0;
+        z-index: 100;
+        border-radius: 0px;
+        box-shadow: 0px 0px 10px #190033;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+}
+.Navbar h3{
+    font-weight: 100;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+.Navbar i{
+    color: #190033;
+    font-size: 1em;
+    margin:0 10px;
+}
+.Search{
+    width:250px;
+    padding: 7px 0px;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    margin:0 15px;
+    /* overflow: hidden; */
+}
+.Search input{
+    border:none;
+    background-color: none;
+    outline: none;
+    /* text-align: center; */
+    background: none;
+    height: 100%;
+    font-size: 15px;
+    margin:0 5px;
+    width: 80%;
+}
+.Search i{
+    margin:0px;
+    width: 10%;
+}
+/* .Search hr{
+    position: absolute;
+    bottom: 5px;
+    height: 2px;
+    background-color:#190033 ;
+    width: 250px;
+    border-radius: 7px;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+.Search input:focus + hr {
+    transform: translateX(0);
+} */
+
+@media screen and (max-width:1000px){
+    .Navbar{
+        margin:0 0;
+        width: 100%;
+        height: 7vh;
+        background-color: rgba(255, 255, 255, 1);
+        position: fixed;
+        top:0;
+        z-index: 100;
+        border-radius: 0px;
+        box-shadow: 0px 0px 10px #190033;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Search{
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .Navbar h3{
+        font-size: 1em;
+    }
+ 
+}
+@media screen and (max-width:500px){
+    .Search{
+        width: 150px;
+    }
+ 
+}
+@media screen and (max-width:380px){
+    .Search{
+        width: 100px;
+    }
+    .Search input{
+        width: 70%;
+    }
+}

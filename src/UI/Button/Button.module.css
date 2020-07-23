@@ -1,0 +1,46 @@
+.Button{
+    padding:0 7px;
+    height: 5vh;
+    border-radius: 7px;
+    text-align: center;
+    /* border:1px solid black; */
+    margin:2vh 15px;
+    font-size: 17px;
+    color: white;
+}
+.Button i{
+    color: white;
+}
+.green{
+    background-color: rgb(43, 189, 43);
+    transition: all 0.3s ease;
+    border: 1px solid rgb(43, 189, 43);
+}
+.green-submit{
+    background-color: rgb(43, 189, 43);
+    transition: all 0.3s ease;
+    border: 1px solid rgb(43, 189, 43);
+    margin: auto;
+    display: block;
+}
+.green:hover{
+    background-color:rgb(54, 216, 54) ;
+}
+.yellow{
+    background-color: rgb(235, 235, 67);
+    transition: all 0.3s ease;
+    border: 1px solid rgb(228, 228, 61);
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width:500px){
+    .Button{
+        margin:3px;
+    }
+}
+@media screen and (max-width:400px){
+    .Button{
+        padding:2px;
+    }
+}

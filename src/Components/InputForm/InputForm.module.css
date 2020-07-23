@@ -1,0 +1,51 @@
+.InputForm{
+    width:350px;
+    height: 500px;
+    background: white;
+    border-radius: 7px;
+}
+.Spinner{
+    width:50px;
+    height: 50px;
+    background-color: white;
+    padding-top: 20px;
+}
+.InputForm input{    
+    width:80%;
+    padding: 7px 0;
+    border-radius: 17px;
+    border:2px solid #190033;
+    margin: 4% 0;
+    text-align: center;
+}
+.InputForm img{
+    display: inline-block;
+    width: 150px;
+    margin: 0 100px;
+}
+.InputForm label[for=img]{
+    width: 100%;
+    display: inline-block;
+}
+.InputForm input[type = file]{    
+    margin: 0 125px;
+    border: none;
+}
+.InputForm .Submit{
+    width: 100%;
+    margin: 10px 0;
+}
+@media screen and (max-width:500px){
+    .InputForm{
+        width:300px;
+        height: 400px;
+    }
+    .InputForm img{
+        width: 100px;
+        margin: 0 100px;
+    }
+    .InputForm input[type = file]{    
+        margin: 0 100px;
+        
+    }
+}
