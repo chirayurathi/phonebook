@@ -134,7 +134,7 @@ class InputForm extends Component{
                     <input onChange={(event)=>{this.changeHandler(event,"email")}} type="email" placeholder="Email" name="email" value={this.state.form.email} />
                 </div>
                 <div className={Style.Submit}>
-                    <span style="display:inline-block;margin:auto">{Subbutton}</span>
+                    <span style="display:table;margin:auto">{Subbutton}</span>
                 </div>
             </div>
             }
